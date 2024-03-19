@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivankaelde.newproject.controller.FlashcardController">
+
+<!-- Big word label in the center -->
+<Label fx:id="wordText" alignment="CENTER" contentDisplay="TOP" prefHeight="254.0" prefWidth="537.0" text="Start new game" StackPane.alignment="TOP_CENTER" />
+
+    <Label fx:id="translationText" alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="580.0" text=" " />
+
+<!-- Buttons at the bottom -->
+<HBox alignment="BOTTOM_CENTER" prefHeight="161.0" prefWidth="600.0" spacing="10" StackPane.alignment="BOTTOM_CENTER">
+    <Button fx:id="incorrectButton" text="Text" />
+    <Button fx:id="flipButton" onAction="#onFlipButtonClick" text="Flip to check" />
+    <Button fx:id="correctButton" onAction="#onCorrectButtonClick" text="Next" />
+</HBox>
+
+</StackPane>

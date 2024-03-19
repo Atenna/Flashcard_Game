@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="268.0" prefWidth="369.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivankaelde.newproject.controller.HelloController">
+  <padding>
+    <Insets bottom="20.0" />
+  </padding>
+   <MenuBar maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="36.0" prefWidth="369.0">
+     <menus>
+       <Menu mnemonicParsing="false" text="File">
+         <items>
+           <MenuItem mnemonicParsing="false" text="Import" />
+               <MenuItem mnemonicParsing="false" text="Statistics" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Edit">
+         <items>
+           <MenuItem mnemonicParsing="false" text="Delete" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Help">
+         <items>
+           <MenuItem mnemonicParsing="false" text="About" />
+         </items>
+       </Menu>
+     </menus>
+   </MenuBar>
+   <BorderPane prefHeight="204.0" prefWidth="252.0">
+      <top>
+      
+        <Label fx:id="welcomeText" prefHeight="49.0" prefWidth="219.0" text="How many words do you want to review?" BorderPane.alignment="CENTER" />
+      </top>
+      <bottom>
+        <Button alignment="CENTER" onAction="#onHelloButtonClick" prefHeight="30.0" prefWidth="122.0" text="Start" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+      </bottom>
+      <center>
+         <TextField fx:id="textFieldNumberofWords" prefHeight="25.0" prefWidth="252.0" promptText="Enter number of words to review" BorderPane.alignment="CENTER" />
+      </center>
+   </BorderPane>
+</VBox>
